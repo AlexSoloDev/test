@@ -5,9 +5,15 @@
 </head>
 <body>
 	<form action="form.php" method="post" name="test">
-		<input type="text" name="test1" placeholder="name">
-		<input type="text" name="test2" placeholder="second name">
-		<button type="submit" value="submit"></button>
+		<fieldset>
+			<legend>Login:</legend>
+			<label for="test1">First name:</label>
+			<input type="text" name="test1" placeholder="name">
+			<label for="test2">Second name:</label>
+			<input type="text" name="test2" placeholder="second name">
+		</fieldset>
+		
 	</form>
+	<button type="submit" form="test" value="Submit">Submit</button>
 </body>
 </html>
